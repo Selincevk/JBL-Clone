@@ -1,0 +1,72 @@
+@import "./variables";
+
+.footer{
+    padding-block: 32px;
+    display: grid;
+    margin-left: 40px;
+    &-container{
+        row-gap: 64px;
+    }
+    &-logo{
+        color: $first-color;
+        font-size: $h2-font-size;
+        font-weight: $font-semi-bold;
+    }
+    &-data{
+        grid-template-columns: repeat(2,1fr);
+    }
+    &-title{
+        font-size: $h3-font-size;
+        margin-bottom: 32px;
+    }
+    &-links{
+        display: grid;
+        row-gap: 10px;
+    }
+    &-link{
+        color: $text-color;
+        transition: all 0.4s;
+        &:hover{
+            color: $first-color;
+        }
+    }
+    &-group{
+        display: grid;
+        input{
+            border: none;
+            outline: none;
+            padding: 20px 30px;
+            width: 70%;
+            border-radius: 64px;
+            margin-bottom: 20px;
+            background-color: $container-color;
+            color: $text-color;
+        }
+        button{
+            width: 70%;
+        }
+    }
+    &-button{
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    &-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        div {
+          display: flex;
+          gap: 16px;
+          margin-bottom: 10px;
+          a {
+            color: $text-color;
+            &:hover {
+              color: $first-color;
+            }
+          }
+        }
+      }
+}

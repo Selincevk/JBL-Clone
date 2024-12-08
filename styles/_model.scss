@@ -1,0 +1,47 @@
+@import "./variables";
+
+.model{
+    h2{
+        text-align: center;
+    }
+    &-container{
+        padding: 32px;
+    }
+    &-content{
+        position: relative;
+        justify-self: center;
+    }
+    &-img{
+        width: 280px;
+    }
+    &-tooltip{
+        position: absolute;
+        &-text{
+            background: $gradient-color;
+            padding: 6px 12px;
+            border-radius: 64px;
+            color: white;
+            font-size: $small-font-size;
+            font-weight: $font-medium;
+            position: absolute;
+            white-space: nowrap;
+            transform: translate(60px, -50px);
+        }
+        &-1{
+            top: 88px;
+            left: 80px;
+        }
+        &-2{
+            top: 16px;
+            right: 24px;
+        }
+        &-3{
+            bottom: 28px;
+            left: 50px;
+        }
+        &-4{
+            bottom: 100px;
+            left: 120px;
+        }
+    }
+}
